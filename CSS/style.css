@@ -1,12 +1,14 @@
 .dashboard-main{
     display: grid;
+
     align-items: center;
-    height: 600px;
+    height: 700px;
     width: 100%;
     background-color: black;
 }
 
-.dashboard-section-parent{
+.dashboard-section-parent{    
+    position: relative;
     display: grid;
     grid-template-columns:22% 45% 30% ;
     /* width: 70%; */
@@ -14,14 +16,36 @@
     height: 550px;
     margin: auto;
     padding: 10px;
-    border-radius: 30px;
 }
 
 .dashboard-section{
     background-color: white;
     height: 100%;
     padding: 10px;
+}
 
+.dashboard-section:nth-child(1){
+    border-left: 5px solid rgba(0, 128, 0, 0.815);
+    border-top: 5px solid rgba(0, 128, 0, 0.815);
+    border-bottom: 5px solid rgba(0, 128, 0, 0.815);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    overflow: hidden;
+}
+
+.dashboard-section:nth-child(2){
+    border-top: 5px solid rgba(0, 128, 0, 0.815);
+    border-bottom: 5px solid rgba(0, 128, 0, 0.815);
+}
+
+.dashboard-section:nth-child(3){
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 5px solid rgba(0, 128, 0, 0.815);
+    border-bottom: 5px solid rgba(0, 128, 0, 0.815);
+    border-right: 5px solid rgba(0, 128, 0, 0.815);
+    z-index: 100;
+    overflow: hidden;
 }
 
  /* dashboard Navigation  */
@@ -791,12 +815,71 @@ border-radius: 50%;
 
 
 
+.emoji{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    z-index: 100;
+}
+
+.emoji img{
+    height: 100%;
+    width: 100%;
+}
+
+.emoji-like{
+    background-color: transparent !important;
+    bottom: -70px;
+    left: 0px;
+    transform: rotate(-10deg);
+}
 
 
+.emoji-love{
+    background-color: transparent !important;
+    top: -80px;
+    left: 80px;
+    transform: scale(1.3);
+}
+
+.emoji-react{
+    background-color: transparent !important;
+    top: 180px;
+    right: -10px;
+    transform: rotate(20deg);
+}
+
+.emoji-circle{
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+    z-index: 50;
+}
 
 
+.emoji-circle div{
+    border-radius: 50%;
+    background-color: #D91D36;
+    height: 90px;
+    width: 90px;
+}
+
+.emoji-circle-green{
+    right: -80px;
+    top: 70px;
+}
+
+.emoji-circle-green div{
+    border-radius: 50%;
+    background-color: #13AFA0;
+    height: 40px;
+    width:  40px;
+}
 
 
-
-
-
+.emoji-comment{
+    left: 480px;
+    top: -40px;
+    width: 100px;
+    transform: rotate(-5deg);
+}
