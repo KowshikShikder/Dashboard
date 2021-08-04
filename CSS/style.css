@@ -1,11 +1,33 @@
 .dashboard-main{
     display: grid;
-
+    justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 800px;
     width: 100%;
-    background-color: black;
+    background-color: white;
 }
+
+
+.dash-heading{
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 80%;
+}
+
+.dash-heading h2{
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+.dash-heading p{
+font-size: 12px;
+}
+
+
+
+
+
 
 .dashboard-section-parent{    
     position: relative;
@@ -15,7 +37,9 @@
     width: 930px;
     height: 550px;
     margin: auto;
+    margin-left: 25vw;
     padding: 10px;
+    transform: scale(0.7);
 }
 
 .dashboard-section{
@@ -25,25 +49,25 @@
 }
 
 .dashboard-section:nth-child(1){
-    border-left: 5px solid rgba(0, 128, 0, 0.815);
-    border-top: 5px solid rgba(0, 128, 0, 0.815);
-    border-bottom: 5px solid rgba(0, 128, 0, 0.815);
+    border-left: 10px solid rgba(0, 128, 0, 0.247);
+    border-top:  10px solid rgba(0, 128, 0, 0.247);
+    border-bottom:  10px solid rgba(0, 128, 0, 0.247);
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     overflow: hidden;
 }
 
 .dashboard-section:nth-child(2){
-    border-top: 5px solid rgba(0, 128, 0, 0.815);
-    border-bottom: 5px solid rgba(0, 128, 0, 0.815);
+    border-top:  10px solid rgba(0, 128, 0, 0.247);
+    border-bottom:  10px solid rgba(0, 128, 0, 0.247);
 }
 
 .dashboard-section:nth-child(3){
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    border-top: 5px solid rgba(0, 128, 0, 0.815);
-    border-bottom: 5px solid rgba(0, 128, 0, 0.815);
-    border-right: 5px solid rgba(0, 128, 0, 0.815);
+    border-top:  10px solid rgba(0, 128, 0, 0.247);
+    border-bottom:  10px solid rgba(0, 128, 0, 0.247);
+    border-right:  10px solid rgba(0, 128, 0, 0.247);
     z-index: 100;
     overflow: hidden;
 }
@@ -882,4 +906,19 @@ border-radius: 50%;
     top: -40px;
     width: 100px;
     transform: rotate(-5deg);
+}
+
+
+.model{
+    top: -100px;
+    left: -380px;
+    position: absolute;
+    height: 780px;
+    width: 350px;
+}
+
+.model img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
 }
